@@ -52,9 +52,7 @@ def submit():
 
         return render_template('index.html', message='You have already submitted ')
         
-@app.route('/pic')
-def pic():
-    return render_template('pic.html')
+
 #To run the program
 if __name__ == '__main__':
     app.run()
