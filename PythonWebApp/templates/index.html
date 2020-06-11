@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn">
+
+    <head>
+        <title>网站</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="../static/main.css" />
+        <link rel="shortcut icon" href="../static/logo.ico" type="image/x-icon" />
+        <meta name="google-site-verification" content="MsympWClROslYFqBA6ahXyKuZYpnuqhmoVWREWFZNuo" />
+    </head>
+
+    <body> 
+            <h1 style="font-size:60px; text-align:center;" >Website</h1>
+            <hr>
+            <br> 
+        
+            <div class="container">
+
+                {% if message %}
+                    <p class="message">{{ message | safe }}</p>
+                {% endif %}
+                <form action="/submit" method="POST">
+                    
+                        <h3>PLease Enter your name</h3>
+                        <input
+                          id="notinclude"
+                          type="text"
+                          name="name"
+                          placeholder="???"/>
+                        <h3> number</h3>
+                        <input
+                          type="i"
+                          name="rannumber"
+                          placeholder="213"/>
+                        <hr>
+                        
+                         <input type="submit" value="Submit" class="btn" />
+                </form>   
+    </body>
+</html>
