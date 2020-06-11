@@ -6,10 +6,10 @@ ENV = ''
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:453v7v8a@localhost/web-app'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://mghjwjsadynqag:0a932625c9c1c4081b42f1e128b8df1f72fa969ac3a2195a6f1376f7c214e732@ec2-54-83-9-169.compute-1.amazonaws.com:5432/dvm5tfpkqqa1m'
+    app.config['SQLALCHEMY_DATABASE_URI'] = ''
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
